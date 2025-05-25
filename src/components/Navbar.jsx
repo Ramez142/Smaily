@@ -33,7 +33,7 @@ export default function Navbar() {
     <nav className="fixed top-10 container w-[90%] left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-xl shadow-[0_0_20px_rgba(0,0,0,0.05)] flex flex-col lg:flex-row gap-5  justify-between items-center rounded-[42px] p-2.5 z-50">
       <div className="flex justify-between w-full lg:w-fit">
         <div className="logo">
-          <Link href="#">
+          <Link href="/">
             <Image src="/logo.svg" alt="smaily logo" width={170} height={50} />
           </Link>
         </div>
@@ -59,8 +59,9 @@ export default function Navbar() {
             <Image src="/language.svg" alt="language" width={24} height={24} />
           </button>
         </Link>
-
-        <button className="bg-blue">{t('booking_button')}</button>
+        <Link href='#contact'>
+          <button className="bg-blue">{t('booking_button')}</button>
+        </Link>
       </div>
     </nav>
   );

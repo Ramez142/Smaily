@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from 'react';
 import { useTranslations } from 'next-intl';
+import Link from "next/link";
 
 
 
@@ -18,15 +19,19 @@ export default function Hero() {
         </p>
 
         <div className="flex justify-center CTA rtl:flex-row-reverse gap-9">
-          <button className="bg-green">
-            {t('whatsapp')}
-            <Image src="/whatsapp.svg" alt="whatsapp" width={24} height={24} />
-          </button>
+          <Link href={'https://wa.me/201019071584'} target="_blank">
+            <button className="bg-green">
+              {t('whatsapp')}
+              <Image src="/whatsapp.svg" alt="whatsapp" width={24} height={24} />
+            </button>
+          </Link>
 
-          <button className="bg-blue">
-            {t('booking_button')}
-            <Image src="/calender.svg" alt="calender" width={24} height={24} />
-          </button>
+          <Link href='#contact'>
+            <button className="bg-blue">
+              {t('booking_button')}
+              <Image src="/calender.svg" alt="calender" width={24} height={24} />
+            </button>
+          </Link>
         </div>
 
         <div className="flex items-end justify-between gap-10 px-4 images-container rtl:flex-row-reverse">
