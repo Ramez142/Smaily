@@ -55,7 +55,10 @@
   "Services": "Services",
   "home": "Home",
   "lang": "AR",
-  "gallery_desc": "Our Clinic in Action"
+  "gallery_desc": "Our Clinic in Action",
+  "loading": "Submitting...",
+  "success": "Submitted successfully!",
+  "error": "Something went wrong. Please try again!"
 
 }
 
