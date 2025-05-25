@@ -4,6 +4,12 @@ A modern, multilingual dental clinic website built with Next.js, React, and Tail
 
 ---
 
+## 🔗 Live Website
+
+[https://smaily.vercel.app](https://smaily.vercel.app)
+
+---
+
 ## 🌍 Screenshots
 
 **English Version**
