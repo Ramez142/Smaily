@@ -31,9 +31,10 @@ export default function Contact() {
                         <div className="flex flex-col md:w-1/2">
                             <label htmlFor="type" className='mb-2'> {t('booking_service_type')} </label>
                             <select name="type" id="type" className='h-10 p-2 text-base ring-1' required >
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="opel">Opel</option>
+                                <option value="general"> {t('general_dentistry')} </option>
+                                <option value="cosmetic"> {t('cosmetic')} </option>
+                                <option value="orthodontics"> {t('orthodontics')} </option>
+                                <option value="whitening"> {t('teeth_whitening')} </option>
                             </select>
                         </div>
                     </div>
