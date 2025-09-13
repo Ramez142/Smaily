@@ -1,41 +1,66 @@
-@import "tailwindcss";
+:root {
+  /* 🎯 ألوان أساسية */
+  --primary-color: #D81B60;   /* وردي أنثوي أنيق */
+  --secondary-color: #9C27B0; /* بنفسجي راقي */
 
+  /* ⚪ خلفيات */
+  --background-main: #FFFFFF; /* أبيض ناصع */
+  --background-soft: #FCE4EC; /* وردي فاتح جدًا للخلفيات */
 
-@theme {
-  --color-blue: #2563EB;
-  --color-green: #10B981;
-  --color-gray: #E5E5E5;
-}
+  /* 🖋️ نصوص */
+  --text-main: #333333;       /* رمادي غامق */
+  --text-secondary: #555555;  /* رمادي متوسط */
 
-html {
-  scroll-behavior: smooth
+  /* 🔘 أزرار وروابط */
+  --button-primary: #D81B60;  /* وردي غامق */
+  --button-hover: #C2185B;    /* وردي أغمق عند المرور */
+  --link-color: #9C27B0;      /* بنفسجي أنيق */
 }
 
 body {
-  /* background: var(--background); */
-  color: var(--foreground);
-  font-family: var(--font-cairo);
-  font-size: clamp(16px, 1.5vw, 20px);
+  background-color: var(--background-main);
+  color: var(--text-main);
+  font-family: 'Arial', 'Tahoma', sans-serif;
+  line-height: 1.6;
 }
 
-button {
-  height: 60px;
-  border-radius: 32px;
-  /* background: #2563EB; */
-  color: #ffffff;
-  padding: 16px 24px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  cursor: pointer;
-  white-space: nowrap;
+/* العناوين */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-nav {
-  white-space: nowrap;
+/* الروابط */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-h1, h2 {
+a:hover {
+  color: var(--button-hover);
+}
+
+/* الأزرار */
+.btn {
+  background-color: var(--button-primary);
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px 24px;
   font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+.btn:hover {
+  background-color: var(--button-hover);
+}
+
+/* أقسام بخلفية ناعمة */
+.section-soft {
+  background-color: var(--background-soft);
+  padding: 40px 20px;
+  border-radius: 10px;
+  }
